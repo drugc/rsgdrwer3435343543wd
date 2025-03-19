@@ -39,9 +39,7 @@ body {
     color: var(--foreground);
     line-height: 1.5;
     background-color: var(--background);
-    background-image: 
-        radial-gradient(circle at 50% 50%, rgba(66, 66, 66, 0.979) 1px, transparent 1px),
-        radial-gradient(circle at 50% 50%, rgb(85, 85, 85) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://files.catbox.moe/q4yhjl.mp4');
     background-size: 30px 30px, 90px 90px;
     background-position: 0 0, 15px 15px;
     position: relative;
