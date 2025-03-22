@@ -36,12 +36,10 @@ html {
 
 body {
     font-family: var(--font-sans);
-    color: var(--foreground);
+    color: #ffffff; 
     line-height: 1.5;
-    background-color: var(--background);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://files.catbox.moe/5cag1c.gif');
-    background-size: 30px 30px, 90px 90px;
-    background-position: 0 0, 15px 15px;
+    background-color: #36393f; 
+    background-image: none;
     position: relative;
 }
 
