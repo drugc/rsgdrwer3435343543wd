@@ -9,28 +9,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+ 
+
+<div id="loading">
+    <div class="spinner"></div>
+  </div>
+  
+  <div id="content" style="display: none;">
     <nav>
         <div class="logo">Programs.lol</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#services">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-  <section id="home">
+  <section class="home" id="home">
     <div class="hero">
         <img src="https://files.catbox.moe/nkkjfb.png" alt="Profile Picture">
         <div class="hero-text">
-            <h1>Who's me</h1>
-            <p>Developer with 8+ years of experience building responsive websites, automation scripts, and custom bots for platforms like Discord and Telegram. Passionate about clean code, user experience, and efficient workflows.</p>
+            <h1>Emir</h1>
+            <p>Founder & CEO at AutoPromoter | Telegram Ads Expert | Service Promotion | Freelance Developer</p>
         </div>
     </div>
 </section>
 
-<section id="skills">
+<section class="skills" id="skills">
     <h2>My Skills</h2>
     <div class="skills-container">
         <div class="skill-card">
@@ -60,83 +66,29 @@
     </div>
 </section>
 
-<section id="services">
-    <h2>What I Offer</h2>
+<section class="pro" id="services">
+    <h2>My Projects</h2>
     <div class="services-container">
-        <div class="service-card">
-            <h3>Front-End Development</h3>
-            <p class="price">Starting From $100</p>
-            <ul>
-                <li><i class="fas fa-check"></i> Custom and modern UI</li>
-                <li><i class="fas fa-check"></i> Responsive design</li>
-                <li><i class="fas fa-check"></i> SEO-friendly code</li>
-            </ul>
+        <div class="service-link">
+            <a href="#frontend">
+                <img src="https://files.catbox.moe/jj33zi.png" alt="Frontend Development">
+                <div class="service-caption">
+                    <h3><a href="https://AutoPromoter.org">AutoPromoter.org</a></h3>
+                    <p>Founder, CEO</p>
+                </div>
+            </a>
         </div>
-        <div class="service-card popular">
-            <div class="popular-badge">Most Popular</div>
-            <h3>Discord & Telegram Bots</h3>
-            <p class="price">Starting From $50</p>
-            <ul>
-                <li><i class="fas fa-check"></i> Custom features & commands</li>
-                <li><i class="fas fa-check"></i> Auto-moderation systems</li>
-                <li><i class="fas fa-check"></i> Dashboard or CLI controls</li>
-                <li><i class="fas fa-check"></i> And more...</li>
-            </ul>
+        
+        <div class="service-link">
+            <a href="#bots">
+                <img src="https://files.catbox.moe/nkkjfb.png" alt="Discord & Telegram Bots">
+                <div class="service-caption">
+                    <h3><a href="https://t.me/programslol">Development Services</a></h3>
+                    <p>Developer</p>
+                </div>
+            </a>
         </div>
-        <div class="service-card">
-            <h3>Automation Tools</h3>
-            <p class="price">Starting From $100</p>
-            <ul>
-                <li><i class="fas fa-check"></i> Task automation scripts</li>
-                <li><i class="fas fa-check"></i> Data scraping/reporting</li>
-                <li><i class="fas fa-check"></i> Scalable solutions</li>
-                <li><i class="fas fa-check"></i> And more...</li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<section id="reviews">
-    <h2>Client Reviews</h2>
-    <div class="reviews-container">
-        <div class="review-card">
-            <div class="review-header">
-                <img src="https://files.catbox.moe/6yeajc.avif" alt="Client">
-                <div>
-                    <div class="stars">★★★★★</div>
-                    <h4>Abbas ▻ TLG Ads</h4>
-                    <span>@abbas</span>
-                </div>
-            </div>
-            <p>"Shoutout to emir for the smoothest $200 deal! Fast, reliable, and professional. Highly recommended!"</p>
-        </div>
-        <div class="review-card">
-            <div class="review-header">
-                <img src="https://files.catbox.moe/6yeajc.avif" alt="Client">
-                <div>
-                    <div class="stars">★★★★★</div>
-                    <h4>Maria</h4>
-                    <span>@N/D</span>
-                </div>
-            </div>
-            <p>"Fast and easy to work with!"</p>
-        </div>
-        <div class="review-card">
-            <div class="review-header">
-                <img src="https://files.catbox.moe/6yeajc.avif" alt="Client">
-                <div>
-                    <div class="stars">★★★★★</div>
-                    <h4>Vanta</h4>
-                    <span>@VantaADS</span>
-                </div>
-            </div>
-            <p>"went first, deal was perfect."</p>
-        </div>
-        <div class="carousel-buttons">
-            <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-          
-            <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-        </div>
     </div>
 </section>
 
@@ -149,7 +101,7 @@
         </div>
         <div class="social-links">
             <a href="https://t.me/pisst"><i class="fab fa-telegram"></i></a>
-            <a href="https://dsc.gg/vada"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://t.me/programslol"><i class="fa-solid fa-globe"></i></a>
             <a href="mailto:"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
@@ -157,6 +109,15 @@
         <p>&copy; 2025 programs.lol. All rights reserved.</p>
     </div>
 </footer>
+
+
+
+  </div>
+
+
+
+
+
 
     <script src="index.js"></script>
 </body>
