@@ -17,7 +17,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgb(27, 27, 27);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,8 +27,8 @@ body {
   .spinner {
     width: 60px;
     height: 60px;
-    border: 6px solid #d1b3ff; 
-    border-top: 6px solid #8000ff; 
+    border: 6px solid #000000; 
+    border-top: 6px solid #6e6e6e; 
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
@@ -41,15 +41,27 @@ body {
 
 
 .home{
-    background-color: #ffffff;
+    background-color: #f3e6bb;
 }
 .skills{
-   background-color: #9f0eff;
+   background-color: #39005f;
 }
 .pro{
-    background-color: #06031a;
+    background-color: #271e5c;
+}
+#js{
+    color: yellow;
 }
 
+#html{
+    color: #e44d26;
+}
+#react{
+    color: #61dafb;
+}
+#py{
+    color: #306998;
+}
 
 
 
@@ -181,7 +193,7 @@ h2 {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     max-width: 1400px;
     margin: 0 auto;
@@ -194,6 +206,7 @@ h2 {
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
     background-color: #000000;
+    cursor: not-allowed;
 }
 
 .skill-card:hover {
@@ -203,7 +216,6 @@ h2 {
 
 .skill-card i {
     font-size: 48px;
-    color: #ffffff;
     margin-bottom: 25px;
 }
 
