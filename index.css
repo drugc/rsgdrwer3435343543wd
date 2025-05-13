@@ -808,6 +808,10 @@ textarea.form-control {
     .contact-container {
         grid-template-columns: 1fr;
     }
+
+      .navbar {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
