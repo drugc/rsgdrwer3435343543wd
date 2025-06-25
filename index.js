@@ -1,4 +1,14 @@
-  
+   
+       window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -11,13 +21,13 @@
             }
         });
     });
-    
+
 
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -25,79 +35,121 @@
             }
         });
     }, observerOptions);
-    
+
     document.querySelectorAll('.fade-in').forEach(el => {
         observer.observe(el);
     });
+
     
+    const skillCards = document.querySelectorAll('.skill-card');
+    skillCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.classList.add('fade-in');
+        observer.observe(card);
+    });
+
 
     document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
+        const email = document.getElementById('email').value;
+        const telegram = document.getElementById('telegram').value;
+        const message = document.getElementById('message').value;
+        
+        const subject = 'New Project Inquiry';
+        const body = `Hello Alex,
 
-        const button = this.querySelector('button');
-        const originalText = button.textContent;
+I'm interested in discussing a project with you.
+
+Email: ${email}
+Telegram: ${telegram}
+
+Message:
+${message}
+
+Best regards`;
         
-        button.textContent = '✅ Message Sent!';
-        button.style.background = 'linear-gradient(145deg, #32CD32, #228B22)';
-        
-        setTimeout(() => {
-            button.textContent = originalText;
-            button.style.background = 'linear-gradient(145deg, #FFD700, #FFA500)';
-            this.reset();
-        }, 2000);
+        const mailtoLink = `mailto:gunter.connection@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
     });
-    
-   
-    function createFloatingBlock() {
-        const block = document.createElement('div');
-        block.className = 'floating-block';
-        block.style.left = Math.random() * 100 + '%';
-        block.style.top = Math.random() * 100 + '%';
-        block.style.animationDelay = Math.random() * 5 + 's';
-        
-        const colors = ['#8B4513', '#A0522D', '#CD853F', '#D2691E', '#DEB887'];
-        block.style.background = colors[Math.floor(Math.random() * colors.length)];
-        
-        document.querySelector('.floating-blocks').appendChild(block);
-        
-     
-        setTimeout(() => {
-            if (block.parentNode) {
-                block.parentNode.removeChild(block);
-            }
-        }, 6000);
-    }
-    
- 
-    setInterval(createFloatingBlock, 3000);
-    
+
   
-    document.querySelectorAll('.skill-block, .social-link, button').forEach(element => {
-        element.addEventListener('mouseenter', function() {
-            this.style.transform = this.style.transform || '';
-            this.style.transition = 'all 0.3s ease';
+    const cubeContainer = document.querySelector('.cube-container');
+    let isMouseDown = false;
+    let mouseX = 0;
+    let mouseY = 0;
+    let rotationX = 0;
+    let rotationY = 0;
+
+    cubeContainer.addEventListener('mousedown', (e) => {
+        isMouseDown = true;
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cubeContainer.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mouseup', () => {
+        isMouseDown = false;
+        cubeContainer.style.cursor = 'pointer';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (!isMouseDown) return;
+        
+        const deltaX = e.clientX - mouseX;
+        const deltaY = e.clientY - mouseY;
+        
+        rotationY += deltaX * 0.5;
+        rotationX -= deltaY * 0.5;
+        
+        cubeContainer.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+        
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+
+    document.querySelectorAll('.skill-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px) scale(1.05)';
         });
         
-        element.addEventListener('click', function() {
-            this.style.transform += ' scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = this.style.transform.replace(' scale(0.95)', '');
-            }, 100);
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
         });
     });
-    
 
+    
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero');
-        const cube = document.querySelector('.cube-container');
+        const shapes = document.querySelectorAll('.shape');
         
-        if (hero) {
-            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        shapes.forEach((shape, index) => {
+            const speed = 0.5 + (index * 0.2);
+            shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+        });
+    });
+
+ 
+    document.addEventListener('mousemove', (e) => {
+        const cursor = document.querySelector('.cursor');
+        if (!cursor) {
+            const newCursor = document.createElement('div');
+            newCursor.className = 'cursor';
+            newCursor.style.cssText = `
+                position: fixed;
+                width: 20px;
+                height: 20px;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 9999;
+                transition: transform 0.1s ease;
+            `;
+            document.body.appendChild(newCursor);
         }
         
-        if (cube) {
-            cube.style.transform = `translateY(${scrolled * 0.3}px)`;
-        }
+        const cursor2 = document.querySelector('.cursor');
+        cursor2.style.left = e.clientX - 10 + 'px';
+        cursor2.style.top = e.clientY - 10 + 'px';
     });
