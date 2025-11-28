@@ -1,0 +1,1 @@
+(function(){var a=['getElementById','current-age','innerText','2007-03-11T17:10:00Z','getTime','now','toFixed'];var b=function(c,d){c=c-0;var e=a[c];return e};var c=b;function d(){var e=new Date(c(3));var f=((Date[c(5)]()-e[c(4)]())/(365.25*24*60*60*1000))[c(6)](10);var g=document[c(0)](c(1));if(g){g[c(2)]=f;}}setInterval(d,1);})();
