@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  position: relative;
+}
+
 body {
   background: #0a0a0f;
   color: #e0e0e0;
@@ -212,8 +217,8 @@ body::before {
   color: #ffffff;
 }
 
-.social-link.telegram:hover {
-  background: #0088cc;
+.social-link.discord:hover {
+  background: #4f27ffe8;
   border-color: #006ba3;
   color: #ffffff;
 }
@@ -224,23 +229,6 @@ body::before {
   color: #ffffff;
 }
 
-.copyright {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 20px;
-  background: rgba(10, 10, 15, 0.9);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #a0a0a0;
-  font-size: 0.9rem;
-  z-index: 1000;
-}
-
-.copyright p {
-  margin: 0;
-}
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .main-container {
@@ -338,3 +326,4 @@ body::before {
     font-size: 1.5rem;
   }
 }
+
