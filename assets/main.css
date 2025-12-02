@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700;900&display=swap');
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+    color: rgba(248, 248, 248, 0.9);
+}
+
+
+  body {
+      background-color: #000000;
+      margin: 0;
+      padding: 20px;
+
+  }
+  
+  a{
+    color: rgb(200, 200, 120);
+    
+  }
+
+  .container {
+      margin: auto;
+      max-width: 600px;
+      border-radius: 12px;
+      padding: 30px;
+      min-height: 90vh;
+
+  }
+
+
+  .msg {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+      align-items: flex-start;
+  }
+
+  .pf {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      border: 2px solid rgb(100, 100, 100);
+  }
+
+  p {
+      background-color: rgb(30, 30, 30);
+      padding: 12px 15px;
+      border-radius: 8px;
+      margin: 0;
+      line-height: 1.5;
+  }
+
+.skills{
+    font-family: monospace;
+    font-size: 0.95rem;
+    background-color: rgba(221, 221, 121, 0.15);
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: rgb(200, 200, 120);
+}
+
+ul{
+    background-color: rgb(30, 30, 30);
+    padding: 15px;
+    border-radius: 8px;
+    list-style: none;
+    margin: 0;
+}
+
+li{
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+#current-age{
+    color: rgb(200, 200, 120);
+    font-weight: 700;
+}
+
+.alg{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 60px;
+        min-height: auto;
+        border-radius: 8px;
+        margin-top: 50px;
+    }
+
+    .msg {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .pf {
+        height: 45px;
+        width: 45px;
+        border: 1.5px solid rgb(100, 100, 100);
+    }
+
+    p {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .skills {
+        font-size: 0.85rem;
+        padding: 4px 6px;
+    }
+
+    ul {
+        padding: 12px;
+    }
+
+    li {
+        margin: 5px 0;
+        font-size: 0.95rem;
+    }
+
+    .alg {
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 6px;
+    }
+
+    .msg {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .pf {
+        height: 40px;
+        width: 40px;
+        min-width: 40px;
+        border: 1px solid rgb(100, 100, 100);
+    }
+
+    p {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .skills {
+        font-size: 0.8rem;
+        display: block;
+        margin-top: 5px;
+    }
+
+    ul {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    li {
+        margin: 4px 0;
+    }
+
+    .alg {
+        height: 100px;
+        width: 150px;
+        margin-top: 8px;
+    }
+
+    #current-age {
+        font-weight: 700;
+    }
+}
+
+
