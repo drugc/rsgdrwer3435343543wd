@@ -1,141 +1,174 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
+<html lang="en" class="dark">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aiden | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/85zl0a.png">
+    <link rel="icon" type="image/png" href="https://files.catbox.moe/ecavof.png"/>
+    <title>Aiden</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-dark text-white min-h-screen selection:bg-primary selection:text-white overflow-x-hidden">
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-dark/80 border-b border-white/5">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="font-bold text-xl tracking-tight">
-                Aiden<span class="text-primary">.</span>
-            </div>
-            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400 navbar-links">
-                <a href="#about" class="hover:text-white transition-colors">About</a>
-                <a href="#stack" class="hover:text-white transition-colors">Stack</a>
-                <a href="#live" class="hover:text-white transition-colors flex items-center gap-2">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                    </span>
-                    Status
-                </a>
-            </div>
-            <a href="#contact" class="bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full text-sm font-medium transition-all">
-                Contact Me
-            </a>
-        </div>
-    </nav>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="about" class="pt-32 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
-            <div class="relative group">
-                <div class="absolute -inset-1 bg-gradient-to-br from-primary to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                <div class="relative w-40 h-40 md:w-56 md:h-56">
-                    <img id="avatar" src="" alt="Avatar" class="w-full h-full rounded-full object-cover border-4 border-card bg-card shadow-2xl">
-                    <div id="status-indicator" class="absolute bottom-3 right-3 md:bottom-5 md:right-5 w-8 h-8 rounded-full border-4 border-card bg-gray-500"></div>
-                </div>
-            </div>
-
-            <div class="text-center md:text-left flex-1">
-                <div class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/20">
-                    Junior Frontend Developer
-                </div>
-                <h3 class="text-3xl md:text-3xl font-bold mb-6 leading-tight">
-                     Hi, I'm  <span class="gradient-text">Aiden</span>. Self-taught frontend developer creating modern, efficient, and user-friendly interfaces.
-                </h3>
-                
-                
-                <div class="flex items-center justify-center md:justify-start gap-4">
-                    <a href="https://github.com/realaiden" title="GitHub" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 hover:text-primary transition-all">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                    <a href="https://x.com/almostaiden" title="X (Twitter)" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 hover:text-blue-400 transition-all">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.338-6.977-6.107 6.977H1.396l7.73-8.835L1.39 2.25h3.51l4.943 6.465 5.601-6.465zM17.313 19.713h1.829L6.16 3.881H4.23l13.083 15.832z"/></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack Section -->
-        <section id="stack" class="py-20 bg-white/5">
-            <div class="max-w-6xl mx-auto px-6">
-                <h2 class="text-2xl font-bold mb-10 text-center md:text-left">Technical Stack</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6" id="tech-stack">
-                    <!-- Generated by JS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Live Dashboard Section -->
-        <section id="live" class="py-20 bg-white/5 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
-            
-            <div class="max-w-6xl mx-auto px-6 relative z-10">
-                <div class="flex items-center gap-3 mb-10">
-                    <div class="relative">
-                        <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                        <div class="absolute inset-0 w-3 h-3 bg-red-500 rounded-full animate-ping opacity-75"></div>
-                    </div>
-                    <h2 class="text-2xl font-bold">Live Status</h2>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-8 items-start">
-                    <div class="space-y-6">
-                        <h3 class="text-sm uppercase tracking-widest text-gray-500 font-bold">Currently Playing</h3>
-                        <div id="spotify-container">
-                            <div class="p-8 rounded-xl bg-card border border-white/5 spotify-card flex flex-col items-center justify-center text-center h-64 text-gray-500">
-                                <div class="flex items-end gap-1 mb-4">
-                                    <div class="music-playing-line"></div>
-                                    <div class="music-playing-line"></div>
-                                    <div class="music-playing-line"></div>
-                                </div>
-                                <p>Not listening to Spotify right now.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="space-y-6">
-                        <h3 class="text-sm uppercase tracking-widest text-gray-500 font-bold">Other Activities</h3>
-                        <div id="activities-container">
-                            <div class="p-8 rounded-xl bg-card border border-white/5 activity-card flex flex-col items-center justify-center text-center h-64 text-gray-500">
-                                <p>No other public activities active.</p>
-                                <p class="text-xs mt-2 opacity-50">Coding in VS Code usually shows up here!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Contact Section -->
-    <footer id="contact" class="py-20 border-t border-white/5">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">Contact Me.</h2>
-            <p class="text-gray-400 mb-8 max-w-lg mx-auto">
-                Feel free to send me a message if you'd like to say hello!
-            </p>
-            <a href="mailto:aidens@telegmail.com" class="inline-block bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
-                Say Hello
-            </a>
-            
-            <div class="mt-20 text-xs text-gray-600">
-                <p>&copy; <span id="year"></span> programs.lol.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="./main.js"></script>
-    <script src="./fetch.js"></script>
     
-</body>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <div class="absolute inset-0 bg-grid opacity-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/80"></div>
+    </div>
+
+  
+    <div class="relative z-10 flex flex-col items-center w-full min-h-screen">
+        
+
+        <section class="w-full max-w-3xl mx-auto mb-16 pt-32 px-4">
+            <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300 flex flex-col items-center justify-center text-center py-12 md:py-16 bg-gradient-to-b from-[#111] to-[#0a0a0a]">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                  Hey, I'm Aiden <span class="animate-wave inline-block origin-[70%_70%]">👋</span>
+                </h1>
+                <p class="text-lg md:text-xl text-neutral-400 mb-8 max-w-lg">
+                  I'm a 18 year old front-end developer
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-2" id="social-links">
+                    
+                    <a href="https://github.com/realaiden" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="github" class="w-5 h-5"></i></a>
+                    <a href="https://instagram.com/pooraiden" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="https://x.com/pooraiden" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    <a href="mailto:aidens@telegmail.com" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="about" class="w-full max-w-5xl mx-auto px-4 pb-20">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">About Me</h2>
+            
+         
+            <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300 mb-6">
+                <h3 class="text-2xl font-bold text-white mb-4 text-center">Overall</h3>
+                <p class="text-neutral-400 leading-relaxed text-center max-w-4xl mx-auto">
+                  I’m a junior frontend developer with a strong passion for building clean and responsive web interfaces. My interest in coding began when I was 13, and at 17 I started learning seriously. I’m still learning and improving every day, focusing on modern frontend technologies and growing into a skilled, reliable developer.
+                </p>
+            </div>
+
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            
+                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Frontend</h3>
+                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
+                        I’m developing my experience in frontend development and have been working with different tools, frameworks, and libraries as I continue learning and improving my skills.
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" class="w-5 h-5" alt="html">
+                            <span class="text-sm font-medium text-neutral-300">Html5</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-5 h-5" alt="Css3">
+                            <span class="text-sm font-medium text-neutral-300">Css3</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-5 h-5" alt="js">
+                            <span class="text-sm font-medium text-neutral-300">Javascript</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-5 h-5" alt="ts">
+                            <span class="text-sm font-medium text-neutral-300">Typescript</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-5 h-5" alt="React">
+                            <span class="text-sm font-medium text-neutral-300">React</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+        
+                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Backend</h3>
+                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
+                        I have experience developing Discord bots using discord.js.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg" class="w-5 h-5" alt="Discord.js">
+                            <span class="text-sm font-medium text-neutral-300">Discord.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+           
+                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Other Technologies</h3>
+                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
+                        Tools & technologies I use during development.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="w-5 h-5" alt="Github">
+                            <span class="text-sm font-medium text-neutral-300">Github</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" class="w-5 h-5" alt="NPM">
+                            <span class="text-sm font-medium text-neutral-300">NPM</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="w-5 h-5" alt="Visual Studio Code">
+                            <span class="text-sm font-medium text-neutral-300">Visual Studio Code</span>
+                        </div>
+                          <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
+                            <img src="https://logo.svgcdn.com/devicon/vite-original.svg" class="w-5 h-5" alt="vite">
+                            <span class="text-sm font-medium text-neutral-300">Vite</span>
+                        </div>
+                    </div>
+                </div>
+
+             
+                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300 flex flex-col">
+                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Currently Doing</h3>
+                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
+                        Below are the activities I am currently doing.
+                    </p>
+                    <div id="spotify-content" class="w-full mt-auto">
+                      
+                        <div class="flex items-center gap-4 animate-pulse">
+                            <div class="w-20 h-20 bg-neutral-800 rounded-md"></div>
+                            <div class="flex-1 space-y-2">
+                                <div class="h-4 bg-neutral-800 rounded w-1/2"></div>
+                                <div class="h-4 bg-neutral-800 rounded w-3/4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+     
+        <footer class="w-full py-8 text-center text-neutral-600 text-sm mt-auto">
+            <p id="copyright">&copy;  programs.lol. All rights reserved.</p>
+        </footer>
+    </div>
+
+    
+    <script src="index.js"></script>
+    <script src="fetch.js"></script>
+  </body>
 </html>
