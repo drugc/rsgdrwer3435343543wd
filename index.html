@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="https://files.catbox.moe/ecavof.png"/>
-    <title>Aiden</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Aiden</title>
+</head>
+<body>
   <script type="importmap">
 {
   "imports": {
@@ -21,158 +16,78 @@
   }
 }
 </script>
-</head>
-  <body>
-    
-    <div class="fixed inset-0 z-0 pointer-events-none">
-        <div class="absolute inset-0 bg-grid opacity-20"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/80"></div>
-    </div>
 
-  
-    <div class="relative z-10 flex flex-col items-center w-full min-h-screen">
-        
-
-        <section class="w-full max-w-3xl mx-auto mb-16 pt-32 px-4">
-            <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300 flex flex-col items-center justify-center text-center py-12 md:py-16 bg-gradient-to-b from-[#111] to-[#0a0a0a]">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-                  Hey, I'm Aiden <span class="animate-wave inline-block origin-[70%_70%]">👋</span>
-                </h1>
-                <p class="text-lg md:text-xl text-neutral-400 mb-8 max-w-lg">
-                  I'm a 18 year old front-end developer
-                </p>
-                
-                <div class="flex flex-wrap justify-center gap-2" id="social-links">
-                    
-                    <a href="https://github.com/realaiden" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="github" class="w-5 h-5"></i></a>
-                    <a href="https://instagram.com/aiden.tsx" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                  <a href="https://steamcommunity.com/id/isaiden" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600">
-  <i data-lucide="gamepad-2" class="w-5 h-5"></i>
-</a>
-
-                   <a href="https://x.com/pooraiden" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                    <a href="mailto:aidens@telegmail.com" class="p-2.5 bg-neutral-800/50 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-700/80 transition-all duration-200 border border-transparent hover:border-neutral-600"><i data-lucide="mail" class="w-5 h-5"></i></a>
+ <div class="container">
+        <section>
+            <!-- 1-->
+            <div class="section-row">
+                <div class="text-content">
+                    <h1>Hi, I’m Amir, an 18 year old <span style="color: rgb(184, 250, 193);">Junior Frontend Developer</span> from Algeria.</h1>
+                    <p>
+                        I’m a junior frontend developer with a strong passion for building clean and responsive web interfaces. My interest in coding began when I was 13, and at 17 I started learning seriously. I’m still learning and improving every day, focusing on modern frontend technologies and growing into a skilled, reliable developer.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img
+                        src="public/pfp.jpg"
+                        alt="PFP"
+                    />
                 </div>
             </div>
-        </section>
 
-       
-        <section id="about" class="w-full max-w-5xl mx-auto px-4 pb-20">
-            <h2 class="text-3xl font-bold text-center text-white mb-8">About Me</h2>
-            
-         
-            <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300 mb-6">
-                <h3 class="text-2xl font-bold text-white mb-4 text-center">Overall</h3>
-                <p class="text-neutral-400 leading-relaxed text-center max-w-4xl mx-auto">
-                  I’m a junior frontend developer with a strong passion for building clean and responsive web interfaces. My interest in coding began when I was 13, and at 17 I started learning seriously. I’m still learning and improving every day, focusing on modern frontend technologies and growing into a skilled, reliable developer.
-                </p>
-            </div>
-
-        
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            
-                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Frontend</h3>
-                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
+            <!-- 2 -->
+            <div class="section-row reverse">
+                <div class="text-content">
+                    <h2>Frontend & Other Technologies</h2>
+                    <p>
                         I’m developing my experience in frontend development and have been working with different tools, frameworks, and libraries as I continue learning and improving my skills.
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" class="w-5 h-5" alt="html">
-                            <span class="text-sm font-medium text-neutral-300">Html5</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-5 h-5" alt="Css3">
-                            <span class="text-sm font-medium text-neutral-300">Css3</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-5 h-5" alt="js">
-                            <span class="text-sm font-medium text-neutral-300">Javascript</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="w-5 h-5" alt="ts">
-                            <span class="text-sm font-medium text-neutral-300">Typescript</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-5 h-5" alt="React">
-                            <span class="text-sm font-medium text-neutral-300">React</span>
-                        </div>
-                        
-                    </div>
-                </div>
-
-        
-                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Backend</h3>
-                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
-                        I have experience developing Discord bots using discord.js.
                     </p>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg" class="w-5 h-5" alt="Discord.js">
-                            <span class="text-sm font-medium text-neutral-300">Discord.js</span>
-                        </div>
-                    </div>
+                </div>
+                <div class="image-content">
+                    <img
+                        src="public/skills.png"
+                        alt="Skills"
+                    />
                 </div>
             </div>
 
-        
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-           
-                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Other Technologies</h3>
-                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
-                        Tools & technologies I use during development.
-                    </p>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="w-5 h-5" alt="Github">
-                            <span class="text-sm font-medium text-neutral-300">Github</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" class="w-5 h-5" alt="NPM">
-                            <span class="text-sm font-medium text-neutral-300">NPM</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" class="w-5 h-5" alt="Visual Studio Code">
-                            <span class="text-sm font-medium text-neutral-300">Visual Studio Code</span>
-                        </div>
-                          <div class="flex items-center gap-2 bg-neutral-900 border border-neutral-800 px-3 py-2 rounded-md hover:bg-neutral-800 transition-colors cursor-default">
-                            <img src="https://logo.svgcdn.com/devicon/vite-original.svg" class="w-5 h-5" alt="vite">
-                            <span class="text-sm font-medium text-neutral-300">Vite</span>
-                        </div>
-                    </div>
-                </div>
-
-             
-                <div class="bg-[#0f0f0f] border border-neutral-800 rounded-xl p-6 md:p-8 hover:border-neutral-700 transition-colors duration-300 flex flex-col">
-                    <h3 class="text-2xl font-bold text-white mb-4 text-center">Currently Doing</h3>
-                    <p class="text-neutral-400 text-center mb-6 min-h-[48px]">
+            <!-- 3 -->
+            <div class="section-row">
+                <div class="text-content">
+                    <h2>Currently Doing</h2>
+                    <p>
                         Below are the activities I am currently doing.
                     </p>
-                    <div id="spotify-content" class="w-full mt-auto">
-                      
-                        <div class="flex items-center gap-4 animate-pulse">
-                            <div class="w-20 h-20 bg-neutral-800 rounded-md"></div>
-                            <div class="flex-1 space-y-2">
-                                <div class="h-4 bg-neutral-800 rounded w-1/2"></div>
-                                <div class="h-4 bg-neutral-800 rounded w-3/4"></div>
+                </div>
+                <div class="image-content">
+                    <div style="background-color: #0f0f0f; border: 1px solid #262626; border-radius: 0.75rem; padding: 1.5rem; display: flex; flex-direction: column; transition: border-color 0.3s ease; width: 100%; max-width: 100%;">
+                       
+                       
+                        <div id="spotify-content" style="width: 100%; margin-top: auto; min-height: 5rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; opacity: 0.5;">
+                                <div style="width: 5rem; height: 5rem; background-color: #262626; border-radius: 0.375rem; flex-shrink: 0;"></div>
+                                <div style="flex: 1; display: flex; flex-direction: column; gap: 0.5rem; min-width: 0;">
+                                    <div style="height: 1rem; background-color: #262626; border-radius: 0.25rem; width: 50%;"></div>
+                                    <div style="height: 1rem; background-color: #262626; border-radius: 0.25rem; width: 75%;"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
-     
-        <footer class="w-full py-8 text-center text-neutral-600 text-sm mt-auto">
-            <p id="copyright">&copy;  programs.lol. All rights reserved.</p>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-item">
+                    <span><b>Made by: Aiden</b></span>
+                </div>
+                <div class="footer-item">
+                </div>
+            </div>
         </footer>
     </div>
 
-    
-    <script src="index.js"></script>
-    <script src="fetch.js"></script>
-  </body>
+<script src="my.js"></script>
+</body>
 </html>
